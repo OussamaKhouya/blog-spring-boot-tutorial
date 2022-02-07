@@ -1,0 +1,17 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.3'
+}
+
+def currentProfile = "ADMIN" //"$System.env.PROFILE"
+
+dependencies {
+    implementation project(":core")
+
+    if(currentProfile == "WEB"){
+            implementation project(":web")
+    }else if(currentProfile == "ADMIN")
+        implementation project(":admin")
+
+    runtimeOnly 'mysql:mysql-connector-java:8.0.25'
+    implementation 'org.springframework.boot:spring-boot-starter'
+}
