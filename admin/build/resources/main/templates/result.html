@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type">
+    <title>Result</title>
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'ID : '+ ${blogPost.id}"/>
+<p th:text="'Title : '+ ${blogPost.title}"/>
+<p th:text="'Preview : '+ ${blogPost.preview}"/>
+<p th:text="'Content : '+ ${blogPost.content}"/>
+<a href="/">Add New Post</a>
+</body>
+</html>
