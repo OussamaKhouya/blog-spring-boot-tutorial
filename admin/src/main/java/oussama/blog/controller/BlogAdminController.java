@@ -23,6 +23,5 @@ public class BlogAdminController {
  public String saveBlogPost(@ModelAttribute BlogPost blogPost) {
    blogRepository.save(blogPost);
    return "result";
-
  }
 }

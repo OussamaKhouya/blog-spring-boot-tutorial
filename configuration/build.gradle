@@ -2,7 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.6.3'
 }
 
-def currentProfile = "ADMIN" //"$System.env.PROFILE"
+def currentProfile = "WEB" //"$System.env.PROFILE"
 
 dependencies {
     implementation project(":core")
